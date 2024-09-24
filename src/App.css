@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+  margin-top: 5px;
+  display: flex;
+  padding: 2px;
+}
+/* CSS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:rgb(255, 204, 0); /* Adjust the background if needed */
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  cursor: pointer;
+  font-size: 18px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px;
+  background-color: #c5c4c443;
+}
+button{
+  width: 120px;
+  height: 40px;
+  background-color: gold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  border: 1px  solid goldenrod;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.15s ease-in;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.search{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #c5c4c443;
+}
+.searchbar{
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+.searchbar input{
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 15px;
+  width: 500px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 20px;
+}
+
+.product-card {
+  max-height: 800px;
+  margin-bottom: 50px;
+  width: 380px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 12px;
+  color: #555;
+}
+
+.compare-price {
+  text-decoration: line-through red;
+}
+
+.badge {
+  display: inline-block;
+  background-color: gold;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
