@@ -136,5 +136,67 @@ button:hover{
   border-radius: 5px;
   margin-top: 10px;
 }
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact-details, .social-media, .subscription {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-media a {
+  color: goldenrod;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #ccc;
+}
+
+.email-input {
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
 
 
