@@ -30,6 +30,10 @@
   cursor: pointer;
   font-size: 18px;
 }
+.navbar-list li a{
+  text-decoration: none;
+  color: black;
+}
 .buttons{
   display: flex;
   align-items: center;
@@ -110,7 +114,7 @@ button:hover{
 }
 .product-card img {
   width: 100%;
-  height: 250px;
+  height: 370px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -127,6 +131,9 @@ button:hover{
 }
 
 .compare-price {
+  text-decoration: line-through red;
+}
+.price-cart{
   text-decoration: line-through red;
 }
 
@@ -200,6 +207,104 @@ button:hover{
   text-align: center;
   margin-top: 15px;
   font-size: 14px;
+}
+.cart-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.cart-left {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-right {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.cart-right p{
+  padding: 10px;
+}
+.cart-right button{
+  width: 180px;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.cart-item-price {
+  text-align: right;
+  padding: 10px;
+  flex: 1;
+}
+.cart-buttons{
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.cart-buttons button{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+.button{
+  margin-top: 10px;
+}
+.button button{
+  width: 90px;
+  height: 35px;
+}
+.offer-price {
+  color: rgb(19, 206, 19);
+  font-weight: bold;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  font-weight: 600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 

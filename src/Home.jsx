@@ -65,12 +65,6 @@ const Home = () => {
           </div>
         </div>
 
-        {selectedCategory && searchTerm === '' && (
-          <h2 className="category-heading">
-            {selectedCategory} Products
-          </h2>
-        )}
-
         <div className="cards-container">
           {filteredData.map((items) => (
             <div key={items.category_name} className="cards">

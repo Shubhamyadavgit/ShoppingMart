@@ -1,6 +1,13 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../Slices/CartSlice';
 
 const Cards = ({product}) => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = ()=>{
+    dispatch(addToCart(product));
+  }
     const badgeText = product.badge_text || "New Arrival";
   return (
     <div className="product-card">
@@ -12,6 +19,9 @@ const Cards = ({product}) => {
       Compare at: ₹{product.compare_at_price}
     </p>
  <span className="badge">{badgeText}</span>
+ <div className="button">
+ <button className='cartButton' onClick={handleAddToCart}>Add to cart</button>
+ </div>
   </div>
   )
 }
