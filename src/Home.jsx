@@ -38,7 +38,7 @@ const Home = () => {
     } else {
       const filtered = data.filter(
         (category) => category.category_name.toLowerCase() === searchTerm.toLowerCase()
-      );      
+      );
       setFilteredData(filtered);
     }
   };

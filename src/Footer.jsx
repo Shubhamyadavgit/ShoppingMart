@@ -7,14 +7,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Contact Details */}
         <div className="contact-details">
           <h3>Contact Us</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 7890</p>
+          <p>Email: ShoppingMart@gmail.com</p>
+          <p>Phone: +999 999 9999</p>
         </div>
 
-        {/* Social Media Icons */}
         <div className="social-media">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <GitHubIcon />
@@ -27,7 +25,6 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Subscription Section */}
         <div className="subscription">
           <h3>Subscribe to our newsletter</h3>
           <input
@@ -40,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Shopping Mart. All rights reserved.</p>
       </div>
     </footer>
   );
